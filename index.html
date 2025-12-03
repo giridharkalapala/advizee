@@ -1,0 +1,1370 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+  <title>Advizee</title>
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="view-transition" content="same-origin">
+  <meta name="theme-color" content="Red">
+  <meta property="og:site_name" content="Consulo">
+  <meta property="og:url" content="https://themeforest.net/user/spreethemes/portfolio">
+  <meta property="og:title" content="Creative Business Consulting Template">
+  <meta property="og:description"
+    content="A versatile HTML template designed for corporate entities and professional businesses.">
+  <meta name="description"
+    content="Consulo is a creative business consulting Bootstrap 5 template designed for corporate entities and professional businesses.">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
+  <!-- fontAwsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- all css -->
+  <link rel="stylesheet" href="assets/css/tailwind/output.css">
+  <link rel="stylesheet" href="assets/css/vendor.css">
+  <style>
+    :root {
+      /* Typography */
+      --font-body--family: "Inter", sans-serif;
+      --font-body--style: normal;
+      --font-body--weight: 400;
+
+      --font-heading--family: "Poppins", sans-serif;
+      --font-heading--style: normal;
+      --font-heading--weight: 600;
+
+      --font-button--family: "Poppins", sans-serif;
+      --font-button--style: normal;
+      --font-button--weight: 600;
+
+      /* h1-h6 */
+      --font-h1--size: 60px;
+      --font-h2--size: 48px;
+      --font-h3--size: 36px;
+      --font-h4--size: 24px;
+      --font-h5--size: 20px;
+      --font-h6--size: 16px;
+
+      /* header nav */
+      --font-nav-main: 16px;
+
+      /* Colors */
+      --color-background: rgba(255, 255, 255, 1);
+      --color-foreground: rgba(28, 37, 57, 1);
+      --color-foreground-heading: rgba(28, 37, 57, 1);
+      --color-foreground-subheading: rgba(93, 102, 111, 1);
+      --color-background-subheading: rgba(255, 255, 255, 0.1);
+      --color-border-subheading-bg: rgba(32, 40, 45, 0.1);
+      --color-primary: rgba(28, 37, 57, 1);
+      --color-primary-background: rgba(28, 37, 57, 1);
+      --color-primary-hover: rgba(28, 37, 57, 1);
+      --color-primary-background-hover: rgba(28, 37, 57, 1);
+      --color-border: rgba(255, 255, 255, 0.3);
+      --color-border-hover: rgba(93, 102, 111, 0.5);
+      --color-shadow: rgba(0, 0, 0, 1);
+      --color-overlay: rgba(28, 37, 57, 0.6);
+
+      /* Buttons */
+      --font-button-size: 16px;
+      --font-button-size-mobile: 16px;
+      --style-button-height: 56px;
+      --style-button-height-mobile: 48px;
+      --style-button-slim-height: 52px;
+      --style-button-slim-height-mobile: 40px;
+      --style-cta-underline-offset: 5px;
+      --style-cta-underline-thickness: 1px;
+
+      /* Colors - Primary Button */
+      --color-primary-button-text: rgba(255, 255, 255, 1);
+      --color-primary-button-background: rgba(32, 40, 45, 1);
+      --color-primary-button-border: rgba(32, 40, 45, 1);
+      --color-primary-button-icon: rgba(28, 37, 57, 1);
+      --color-primary-button-icon-background: rgba(255, 255, 255, 1);
+
+      --color-primary-button-hover-text: rgba(32, 40, 45, 1);
+      --color-primary-button-hover-background: rgb(255, 255, 255, 1);
+      --color-primary-button-hover-border: rgb(32, 40, 45, 1);
+      --color-primary-button-hover-icon: rgba(255, 255, 255, 1);
+      --color-primary-button-hover-icon-background: rgba(28, 37, 57, 1);
+
+      /* Colors - Secondary Button */
+      --color-secondary-button-text: rgba(32, 40, 45, 1);
+      --color-secondary-button-background: rgba(255, 255, 255, 1);
+      --color-secondary-button-border: rgba(255, 255, 255, 1);
+      --color-secondary-button-icon: rgba(255, 255, 255, 1);
+      --color-secondary-button-icon-background: rgba(32, 40, 45, 1);
+
+      --color-secondary-button-hover-text: rgba(255, 255, 255, 1);
+      --color-secondary-button-hover-background: rgba(32, 40, 45, 1);
+      --color-secondary-button-hover-border: rgba(32, 40, 45, 1);
+      --color-secondary-button-hover-icon: rgba(28, 37, 57, 1);
+      --color-secondary-button-hover-icon-background: rgba(255, 255, 255, 1);
+
+      /* Colors - Input */
+      --color-input-background: rgba(255, 255, 255, 1);
+      --color-input-text: rgba(93, 102, 111, 1);
+      --color-input-border: rgba(93, 102, 111, 0.2);
+      --color-input-hover-background: rgba(255, 255, 255, 1);
+      --color-input-hover-text: rgba(93, 102, 111, 1);
+      --color-input-hover-border: rgba(93, 102, 111, 0.2);
+
+      /* Borders */
+      --style-border-width-buttons-primary: 1px;
+      --style-border-width-buttons-secondary: 1px;
+      --style-border-radius-buttons-primary: 40px;
+      --style-border-radius-buttons-secondary: 40px;
+
+      --style-border-width-inputs: 1px;
+      --style-border-radius-inputs: 8px;
+      --style-border-width: 1px;
+
+      /* Focus */
+      --focus-outline-width: 1px;
+      --focus-outline-offset: 3px;
+
+      /* Pagination */
+      --style-pagination-border-width: 1px;
+      --pagination-item-foreground: rgba(28, 37, 57, 1);
+      --pagination-item-background: rgba(242, 242, 242, 1);
+      --pagination-item-border: rgba(242, 242, 242, 1);
+      --pagination-item-active-foreground: rgba(255, 255, 255, 1);
+      --pagination-item-active-background: rgba(28, 37, 57, 1);
+      --pagination-item-active-border: rgba(28, 37, 57, 1);
+
+      /* Swiper */
+      --swiper-navigation-size: 16px;
+      --swiper-navigation-color: rgba(255, 255, 255, 1);
+      --swiper-navigation-background-color: transparent;
+      --swiper-navigation-hover-color: rgba(255, 255, 255, 1);
+      --swiper-navigation-hover-background-color: rgba(255, 255, 255, 0.15);
+      --swiper-pagination-bullet-inactive-color: rgba(242, 242, 242);
+      --swiper-pagination-color: rgba(28, 37, 57, 1);
+      --swiper-pagination-bullet-inactive-opacity: 1;
+    }
+
+    @media (max-width: 767px) {
+      :root {
+        --font-h1--size: 48px;
+        --font-h2--size: 40px;
+        --font-h3--size: 28px;
+        --font-h4--size: 20px;
+        --font-h5--size: 18px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Header 1 -->
+  <sticky-header data-sticky-type="always">
+    <header class="header-1 header-floating">
+      <div class="container-fluid">
+        <div class="header-grid">
+          <a class="header-logo" href="index.html" aria-label="Advizee">
+            <img src="assets/img/Advizee-logo.png" alt="Advizee Logo" width="189" height="32">
+          </a>
+          <drawer-menu>
+            <nav class="header-nav drawer-menu">
+              <div class="lg:hidden header-nav-headings">
+                <a class="header-logo" href="index.html" aria-label="Advizee">
+                  <img src="assets/img/Advizee-logo.png" alt="Advizee Logo" width="189" height="32" loading="lazy">
+                </a>
+                <drawer-opener class="svg-wrapper menu-close" data-drawer=".drawer-menu">
+                  <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M8.00386 9.41816C7.61333 9.02763 7.61334 8.39447 8.00386 8.00395C8.39438 7.61342 9.02755 7.61342 9.41807 8.00395L12.0057 10.5916L14.5907 8.00657C14.9813 7.61605 15.6144 7.61605 16.0049 8.00657C16.3955 8.3971 16.3955 9.03026 16.0049 9.42079L13.4199 12.0058L16.0039 14.5897C16.3944 14.9803 16.3944 15.6134 16.0039 16.0039C15.6133 16.3945 14.9802 16.3945 14.5896 16.0039L12.0057 13.42L9.42097 16.0048C9.03045 16.3953 8.39728 16.3953 8.00676 16.0048C7.61624 15.6142 7.61624 14.9811 8.00676 14.5905L10.5915 12.0058L8.00386 9.41816Z"
+                      fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM3.00683 12C3.00683 16.9668 7.03321 20.9932 12 20.9932C16.9668 20.9932 20.9932 16.9668 20.9932 12C20.9932 7.03321 16.9668 3.00683 12 3.00683C7.03321 3.00683 3.00683 7.03321 3.00683 12Z"
+                      fill="currentColor" />
+                  </svg>
+                </drawer-opener>
+              </div>
+              <ul class="header-menu list-unstyled">
+                <li class="nav-item">
+                  <a class="menu-link menu-link-main menu-accrodion" href="#">
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="menu-link menu-link-main" href="#">
+                    About Us
+                  </a>
+                </li>
+                <li class="nav-item nav-item-static">
+                  <a class="menu-link menu-link-main menu-accrodion" href="#">
+                    Services
+                    <!-- <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 5L0 0H10L5 5Z" fill="currentColor" />
+                    </svg> -->
+                  </a>
+                </li>
+                <li class="nav-item nav-item-static">
+                  <a class="menu-link menu-link-main menu-accrodion" href="#">
+                    Industries
+                    <!-- <svg width="10" height="5" viewBox="0 0 10 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 5L0 0H10L5 5Z" fill="currentColor" />
+                    </svg> -->
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="menu-link menu-link-main" href="#">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </drawer-menu>
+
+          <!-- </div> -->
+          <drawer-opener class="svg-wrapper menu-open lg:!hidden" data-drawer=".drawer-menu">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="26" cy="26" r="25.5" fill="white" stroke="currentColor" />
+              <path
+                d="M32.5 18.2857C32.5 17.5757 31.9179 17 31.2 17H14.3C13.5821 17 13 17.5757 13 18.2857C13 18.9958 13.5821 19.5714 14.3 19.5714H31.2C31.9179 19.5714 32.5 18.9957 32.5 18.2857ZM14.3 24.7143H37.7C38.4179 24.7143 39 25.29 39 26C39 26.7101 38.4179 27.2857 37.7 27.2857H14.3C13.5821 27.2857 13 26.7101 13 26C13 25.29 13.5821 24.7143 14.3 24.7143ZM14.3 32.4286H26C26.7179 32.4286 27.3 33.0042 27.3 33.7143C27.3 34.4243 26.7179 35 26 35H14.3C13.5821 35 13 34.4243 13 33.7143C13 33.0042 13.5821 32.4286 14.3 32.4286Z"
+                fill="currentColor" />
+            </svg>
+          </drawer-opener>
+        </div>
+      </div>
+    </header>
+  </sticky-header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero Slider -->
+    <hero-slider class="hero-slider with-floating-header">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <div class="slider-card overlay">
+              <picture class="slider-media">
+                <source media="(max-width: 575px)" srcset="assets/img/slider/slider_01.webp">
+                <source media="(max-width: 991px)" srcset="assets/img/slider/slider_01.webp">
+                <img src="assets/img/slider/slider_01.webp" width="1920" height="1000" loading="eager" alt="Hero Image">
+              </picture>
+              <div class="slider-content">
+                <div class="container height-100 flex items-center">
+                  <div class="content-box slider-animation section-headings">
+                    <h2 class="heading text-50 fw-500">
+                      TRANSFORMING BUSINESSES WITH STRATEGIC EXPERTISE
+                    </h2>
+                    <div class="text text-18">
+                      We help companies grow, optimize operations, improve profitability, and stay ahead in the
+                      competitive market with innovative and result-driven business solutions.
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="button button--primary" aria-label="hero button">
+                        Get Free Consultation
+                        <span class="svg-wrapper">
+                          <svg class="icon-20" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M13.3365 7.84518L6.16435 15.0173L4.98584 13.8388L12.158 6.66667H5.83652V5H15.0032V14.1667H13.3365V7.84518Z"
+                              fill="currentColor" />
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide -->
+          <div class="swiper-slide">
+            <div class="slider-card overlay">
+              <picture class="slider-media">
+                <source media="(max-width: 575px)" srcset="assets/img/slider/slider_02.webp">
+                <source media="(max-width: 991px)" srcset="assets/img/slider/slider_02.webp">
+                <img src="assets/img/slider/slider_02.webp" width="1920" height="1000" loading="lazy" alt="Hero Image">
+              </picture>
+              <div class="slider-content">
+                <div class="container height-100 flex items-center">
+                  <div class="content-box slider-animation section-headings">
+                    <h2 class="heading text-50 fw-500">
+                      YOUR TRUSTED PARTNER FOR BUSINESS GROWTH & TRANSFORMATION
+                    </h2>
+                    <div class="text text-18">
+                      We provide strategic consulting, digital solutions, and expert guidance to help businesses scale
+                      efficiently, innovate confidently, and achieve sustainable long-term success.
+                    </div>
+                    <div class="buttons">
+                      <a href="#" class="button button--primary" aria-label="hero button">
+                        Get Free Consultation
+                        <span class="svg-wrapper">
+                          <svg class="icon-20" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M13.3365 7.84518L6.16435 15.0173L4.98584 13.8388L12.158 6.66667H5.83652V5H15.0032V14.1667H13.3365V7.84518Z"
+                              fill="currentColor" />
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider navigation -->
+        <div class="slider-nav">
+          <div class="swiper-button-prev">
+            <svg class="icon icon-32" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+              <path d="M14.6663 25.3359L5.33301 16.0026M5.33301 16.0026L14.6663 6.66927M5.33301 16.0026H26.6663"
+                stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="icon icon-32" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+              fill="none">
+              <path d="M17.3337 25.3359L26.667 16.0026M26.667 16.0026L17.3337 6.66927M26.667 16.0026H5.33366"
+                stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </hero-slider>
+
+    <!-- Image Text -->
+    <div class="image-text mt-100">
+      <div class="container">
+        <div class="grid lg:grid-cols-2 lg:gap-1 items-center">
+          <div class="lg:col-span-1 col-span-2">
+            <div class="media-wrap" data-aos="zoom-in-up">
+              <img class="abt-us" src="assets/img/About-us-main.jpg" width="992" height="863" loading="lazy"
+                alt="Image">
+            </div>
+          </div>
+          <div class="lg:col-span-1 col-span-2">
+            <div class="content section-headings">
+              <div class="subheading text-50 " data-aos="fade-up">
+                <span>ABOUT US</span>
+              </div>
+              <h2 class="heading text-30" data-aos="fade-up">
+                Empowering business to grow
+              </h2>
+              <div class="text text-18" data-aos="fade-up">
+                We are a leading business consultancy dedicated to guiding startups, SMEs, and enterprises toward
+                measurable growth. With a team of seasoned experts, modern tools, and deep industry insights, we deliver
+                strategies that bring clarity, efficiency, and sustainable success.
+              </div>
+              <ul class="text-lists list-unstyled">
+                <li class="text-item text text-18" data-aos="fade-up">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <g clip-path="url(#clip0_9088_5324)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.81362 13.0268C8.34112 12.7113 7.70994 12.783 7.31911 13.196C6.92886 13.6084 6.89211 14.2431 7.23336 14.6975L10.7334 19.3642C10.9445 19.6453 11.2712 19.8168 11.6229 19.8303C11.9741 19.8431 12.313 19.6972 12.5446 19.4324L20.7113 10.0991C21.1144 9.63883 21.0928 8.94525 20.6623 8.51008C20.2318 8.07492 19.5388 8.04692 19.0739 8.44475L11.5786 14.8696L8.81362 13.0268Z"
+                        fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.9327 0.515625C6.52939 0.515625 0.519531 6.52549 0.519531 13.9288C0.519531 21.3321 6.52939 27.3419 13.9327 27.3419C21.336 27.3419 27.3458 21.3321 27.3458 13.9288C27.3458 6.52549 21.336 0.515625 13.9327 0.515625ZM13.9327 1.68166C20.6921 1.68166 26.1798 7.16938 26.1798 13.9288C26.1798 20.6882 20.6921 26.1759 13.9327 26.1759C7.17329 26.1759 1.68557 20.6882 1.68557 13.9288C1.68557 7.16938 7.17329 1.68166 13.9327 1.68166Z"
+                        fill="CurrentColor" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.13872 12.5389C8.42939 12.0658 7.48265 12.1731 6.89698 12.792C6.31073 13.4115 6.25648 14.363 6.76806 15.0449L10.2681 19.7115C10.5848 20.1339 11.0748 20.3905 11.6021 20.4104C12.1295 20.4302 12.6376 20.2109 12.9852 19.8142L21.1519 10.4809C21.7562 9.78965 21.7241 8.74956 21.0784 8.0974C20.4326 7.44465 19.3926 7.40205 18.6961 7.99938L11.5356 14.1366L9.13872 12.5389ZM8.4918 13.5096L11.2562 15.3529C11.4738 15.4976 11.7608 15.4801 11.9597 15.3103L19.455 8.88547C19.6871 8.68597 20.0342 8.70055 20.2495 8.91814C20.4647 9.13514 20.4752 9.48222 20.274 9.71264L12.1073 19.046C11.9912 19.1778 11.8221 19.2513 11.6459 19.2443C11.4703 19.2379 11.307 19.1521 11.2014 19.0116L7.7014 14.3449C7.53106 14.1174 7.54913 13.8006 7.74455 13.5941C7.93938 13.3876 8.25497 13.3521 8.4918 13.5096Z"
+                        fill="CurrentColor" />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <rect width="28" height="28" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Industry-experienced consultants who bring practical, real-world solutions.
+                </li>
+                <li class="text-item text text-18" data-aos="fade-up">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <g clip-path="url(#clip0_9088_5324)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.81362 13.0268C8.34112 12.7113 7.70994 12.783 7.31911 13.196C6.92886 13.6084 6.89211 14.2431 7.23336 14.6975L10.7334 19.3642C10.9445 19.6453 11.2712 19.8168 11.6229 19.8303C11.9741 19.8431 12.313 19.6972 12.5446 19.4324L20.7113 10.0991C21.1144 9.63883 21.0928 8.94525 20.6623 8.51008C20.2318 8.07492 19.5388 8.04692 19.0739 8.44475L11.5786 14.8696L8.81362 13.0268Z"
+                        fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.9327 0.515625C6.52939 0.515625 0.519531 6.52549 0.519531 13.9288C0.519531 21.3321 6.52939 27.3419 13.9327 27.3419C21.336 27.3419 27.3458 21.3321 27.3458 13.9288C27.3458 6.52549 21.336 0.515625 13.9327 0.515625ZM13.9327 1.68166C20.6921 1.68166 26.1798 7.16938 26.1798 13.9288C26.1798 20.6882 20.6921 26.1759 13.9327 26.1759C7.17329 26.1759 1.68557 20.6882 1.68557 13.9288C1.68557 7.16938 7.17329 1.68166 13.9327 1.68166Z"
+                        fill="CurrentColor" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.13872 12.5389C8.42939 12.0658 7.48265 12.1731 6.89698 12.792C6.31073 13.4115 6.25648 14.363 6.76806 15.0449L10.2681 19.7115C10.5848 20.1339 11.0748 20.3905 11.6021 20.4104C12.1295 20.4302 12.6376 20.2109 12.9852 19.8142L21.1519 10.4809C21.7562 9.78965 21.7241 8.74956 21.0784 8.0974C20.4326 7.44465 19.3926 7.40205 18.6961 7.99938L11.5356 14.1366L9.13872 12.5389ZM8.4918 13.5096L11.2562 15.3529C11.4738 15.4976 11.7608 15.4801 11.9597 15.3103L19.455 8.88547C19.6871 8.68597 20.0342 8.70055 20.2495 8.91814C20.4647 9.13514 20.4752 9.48222 20.274 9.71264L12.1073 19.046C11.9912 19.1778 11.8221 19.2513 11.6459 19.2443C11.4703 19.2379 11.307 19.1521 11.2014 19.0116L7.7014 14.3449C7.53106 14.1174 7.54913 13.8006 7.74455 13.5941C7.93938 13.3876 8.25497 13.3521 8.4918 13.5096Z"
+                        fill="CurrentColor" />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <rect width="28" height="28" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  Customized strategies tailored to your unique challenges and goals.
+                </li>
+                <li class="text-item text text-18" data-aos="fade-up">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <g clip-path="url(#clip0_9088_5324)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.81362 13.0268C8.34112 12.7113 7.70994 12.783 7.31911 13.196C6.92886 13.6084 6.89211 14.2431 7.23336 14.6975L10.7334 19.3642C10.9445 19.6453 11.2712 19.8168 11.6229 19.8303C11.9741 19.8431 12.313 19.6972 12.5446 19.4324L20.7113 10.0991C21.1144 9.63883 21.0928 8.94525 20.6623 8.51008C20.2318 8.07492 19.5388 8.04692 19.0739 8.44475L11.5786 14.8696L8.81362 13.0268Z"
+                        fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.9327 0.515625C6.52939 0.515625 0.519531 6.52549 0.519531 13.9288C0.519531 21.3321 6.52939 27.3419 13.9327 27.3419C21.336 27.3419 27.3458 21.3321 27.3458 13.9288C27.3458 6.52549 21.336 0.515625 13.9327 0.515625ZM13.9327 1.68166C20.6921 1.68166 26.1798 7.16938 26.1798 13.9288C26.1798 20.6882 20.6921 26.1759 13.9327 26.1759C7.17329 26.1759 1.68557 20.6882 1.68557 13.9288C1.68557 7.16938 7.17329 1.68166 13.9327 1.68166Z"
+                        fill="CurrentColor" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.13872 12.5389C8.42939 12.0658 7.48265 12.1731 6.89698 12.792C6.31073 13.4115 6.25648 14.363 6.76806 15.0449L10.2681 19.7115C10.5848 20.1339 11.0748 20.3905 11.6021 20.4104C12.1295 20.4302 12.6376 20.2109 12.9852 19.8142L21.1519 10.4809C21.7562 9.78965 21.7241 8.74956 21.0784 8.0974C20.4326 7.44465 19.3926 7.40205 18.6961 7.99938L11.5356 14.1366L9.13872 12.5389ZM8.4918 13.5096L11.2562 15.3529C11.4738 15.4976 11.7608 15.4801 11.9597 15.3103L19.455 8.88547C19.6871 8.68597 20.0342 8.70055 20.2495 8.91814C20.4647 9.13514 20.4752 9.48222 20.274 9.71264L12.1073 19.046C11.9912 19.1778 11.8221 19.2513 11.6459 19.2443C11.4703 19.2379 11.307 19.1521 11.2014 19.0116L7.7014 14.3449C7.53106 14.1174 7.54913 13.8006 7.74455 13.5941C7.93938 13.3876 8.25497 13.3521 8.4918 13.5096Z"
+                        fill="CurrentColor" />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <rect width="28" height="28" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  End-to-end support from strategy development to complete execution.
+                </li>
+              </ul>
+              <div class="buttons" data-aos="fade-up">
+                <a href="#" class="button button--primary" aria-label="More About Us">
+                  More About Us
+                  <span class="svg-wrapper">
+                    <svg class="icon-20" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.3365 7.84518L6.16435 15.0173L4.98584 13.8388L12.158 6.66667H5.83652V5H15.0032V14.1667H13.3365V7.84518Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Multicolmun -->
+    <div class="our-services mt-100 section-padding">
+      <div class="container">
+        <div class="section-headings section-headings-horizontal">
+          <div class="section-headings-left">
+            <div class="subheading text-50 " data-aos="fade-right" data-aos-delay="10">
+              <span>OUR SERVICES</span>
+            </div>
+            <h2 class="heading text-30" data-aos="fade-right" data-aos-delay="20">
+              Solutions tailored to your business needs
+            </h2>
+          </div>
+
+          <!-- <div class="section-headings-right buttons" data-aos="fade-left" data-aos-delay="20">
+            <a href="#" class="button button--primary" aria-label="hero button">
+              More Services
+              <span class="svg-wrapper">
+                <svg class="icon-20" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M13.3365 7.84518L6.16435 15.0173L4.98584 13.8388L12.158 6.66667H5.83652V5H15.0032V14.1667H13.3365V7.84518Z"
+                    fill="currentColor" />
+                </svg>
+              </span>
+            </a>
+          </div> -->
+        </div>
+
+        <div class="section-content" data-aos="fade-up">
+          <accordion-horizontal class="accordion-horizontal">
+            <ul class="service-list list-unstyled radius18">
+              <li class="accordion-li">
+                <div class="accordion-title">
+                  <div class="accordion-title-icon">
+                    <img class="icon" src="assets/img/icons/planning.png" alt="">
+
+                    <h2 class="heading text-24 text-rotate">
+                      Business Strategy Consulting
+                    </h2>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-plus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-minus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                </div>
+                <div class="accordion-content">
+                  <div class="service-content-inner">
+                    <div>
+                      <!-- <img class="icon" src="assets/img/icons/planning.png" alt=""> -->
+                      <img class="service" src="assets/img/service/service-1.jpg" alt="">
+                      <h2 class="heading text-24">
+                        Business Strategy Consulting
+                      </h2>
+                      <p class="text text-16">
+                        We develop tailored strategies to help you scale, optimize performance, and stand out in your
+                        industry.
+                      </p>
+                    </div>
+                    <div class="service-button">
+                      <a href="#" class="button button--secondary">
+                        + View Details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion-li">
+                <div class="accordion-title">
+                  <div class="accordion-title-icon">
+
+                    <img class="icon" src="assets/img/icons/money.png" alt="">
+                    <h2 class="heading text-24 text-rotate">
+                      Financial & Budget Planning
+                    </h2>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-plus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-minus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                </div>
+                <div class="accordion-content">
+                  <div class="service-content-inner">
+                    <div>
+                      <!-- <img class="icon" src="assets/img/icons/money.png" alt=""> -->
+                      <img class="service" src="assets/img/service/s1.jpg" alt="">
+                      <h2 class="heading text-24">
+                        Financial & Budget Planning
+                      </h2>
+                      <p class="text text-16">
+                        Plan your finances effectively to maximize ROI and maintain long-term financial health.
+                      </p>
+                    </div>
+                    <div class="service-button">
+                      <a href="#" class="button button--secondary">
+                        + View Details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion-li">
+                <div class="accordion-title">
+                  <div class="accordion-title-icon">
+
+                    <img class="icon" src="assets/img/icons/transformation.png" alt="">
+
+                    <h2 class="heading text-24 text-rotate">
+                      Digital Transformation
+                    </h2>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-plus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-minus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                </div>
+                <div class="accordion-content">
+                  <div class="service-content-inner">
+                    <div>
+
+                      <!-- <img class="icon" src="assets/img/icons/transformation.png" alt=""> -->
+                      <img class="service" src="assets/img/service/s3.jpg" alt="">
+                      <h2 class="heading text-24">
+                        Digital Transformation
+                      </h2>
+                      <p class="text text-16">
+                        Upgrade your business with smart digital solutions, automation, and modern technologies.
+                      </p>
+                    </div>
+                    <div class="service-button">
+                      <a href="#" class="button button--secondary">
+                        + View Details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion-li">
+                <div class="accordion-title">
+                  <div class="accordion-title-icon">
+
+                    <img class="icon" src="assets/img/icons/research.png" alt="">
+
+                    <h2 class="heading text-24 text-rotate">
+                      Market Research & Analysis
+                    </h2>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-plus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-minus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                </div>
+                <div class="accordion-content">
+                  <div class="service-content-inner">
+                    <div>
+
+                      <!-- <img class="icon" src="assets/img/icons/research.png" alt=""> -->
+                      <img class="service" src="assets/img/service/s4.jpg" alt="">
+                      <h2 class="heading text-24">
+                        Market Research & Analysis
+                      </h2>
+                      <p class="text text-16">
+                        Gain valuable insights into customer behavior, market trends, and competition.
+                      </p>
+                    </div>
+
+                    <div class="service-button">
+                      <a href="#" class="button button--secondary">
+                        + View Details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion-li">
+                <div class="accordion-title">
+                  <div class="accordion-title-icon">
+
+                    <img class="icon" src="assets/img/icons/branding.png" alt="">
+
+                    <h2 class="heading text-24 text-rotate">
+                      <!-- Branding &  -->Marketing Consulting
+                    </h2>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-plus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-minus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                </div>
+                <div class="accordion-content">
+                  <div class="service-content-inner">
+                    <div>
+
+                      <!-- <img class="icon" src="assets/img/icons/branding.png" alt=""> -->
+                      <img class="service" src="assets/img/service/s5.jpg" alt="">
+                      <h2 class="heading text-24">
+                        <!-- Branding & -->Marketing Consulting
+                      </h2>
+                      <p class="text text-16">
+                        Build a strong brand identity and launch campaigns that drive awareness and conversions.
+                      </p>
+                    </div>
+                    <div class="service-button">
+                      <a href="#" class="button button--secondary">
+                        + View Details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="accordion-li">
+                <div class="accordion-title">
+                  <div class="accordion-title-icon">
+
+
+                    <img class="icon" src="assets/img/icons/management (1).png" alt="">
+
+                    <h2 class="heading text-24 text-rotate">
+                      HR & Recruitment Services
+                    </h2>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-plus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1"
+                    stroke="currentColor" class="icon icon-minus-circle">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                </div>
+                <div class="accordion-content">
+                  <div class="service-content-inner">
+                    <div>
+
+                      <!-- <img class="icon" src="assets/img/icons/management (1).png" alt=""> -->
+                      <img class="service" src="assets/img/service/s6.jpg" alt="">
+                      <h2 class="heading text-24">
+                        HR & Recruitment Services
+                      </h2>
+                      <p class="text text-16">
+                        Hire the right talent, streamline HR processes, and build a strong workforce all.
+                      </p>
+                    </div>
+
+                    <div class="service-button">
+                      <a href="#" class="button button--secondary">
+                        + View Details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </accordion-horizontal>
+        </div>
+      </div>
+    </div>
+
+    <!-- =============================================== -->
+    <!-- Why Choose Us -->
+    <div class="promotion section-padding">
+      <div class="container">
+        <div class="promotion-container">
+          <div class="grid grid-cols-12 lg:gap-1">
+            <div class="lg:col-span-7 col-span-12">
+              <div class="promtion-content section-headings">
+                <div class="subheading text-gray text-50  aos-init aos-animate" data-aos="fade-right">
+                  <span>WHY CHOOSE US</span>
+                </div>
+                <h2 class="heading text-30 aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+                  Choose a consultancy that cuts the noise.
+                </h2>
+                <div class="text text-18 text-black aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+                  Most consultants talk big. We don’t. We focus on clarity, data-backed decisions, and strategies built
+                  specifically for your business. Every recommendation is practical, actionable, and tested. You get
+                  transparency, speed, and support from start to finish.
+                </div>
+                <ul class="promotion-lists list-unstyled">
+                  <li class="promotion-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="10">
+                    <div class="promotion-title">
+                      <div class="text text-18 fw-600">
+                        We Solve Problems
+                      </div>
+                    </div>
+                    <div class="promotion-text text text-16">
+                      Most consultants talk big and deliver little. We focus on results — lower costs, higher
+                      efficiency, and real growth.
+                    </div>
+                  </li>
+                  <li class="promotion-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
+                    <div class="promotion-title">
+                      <div class="text text-18 fw-600">
+                        End-to-End Support
+                      </div>
+                    </div>
+                    <div class="promotion-text text text-16">
+                      From strategy to execution, we stay hands-on — not just advice, but support until the results are
+                      real.
+                    </div>
+                  </li>
+                </ul>
+                <div class="buttons aos-init aos-animate" data-aos="fade-up">
+                  <a href="#" class="button button--secondary" aria-label="View All Details">
+                    Discover More
+                    <span class="svg-wrapper">
+                      <svg class="icon-20" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M13.3365 7.84518L6.16435 15.0173L4.98584 13.8388L12.158 6.66667H5.83652V5H15.0032V14.1667H13.3365V7.84518Z"
+                          fill="CurrentColor"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-5 col-span-12">
+              <div class="promotion-img radius18 aos-init aos-animate" data-aos="flip-left">
+                <img src="assets/img/why-choose-us/why-choose-us.jpg" width="1000" height="1469" loading="lazy"
+                  alt="Promotion image">
+              </div>
+            </div>
+          </div>
+          <counter-up class="counter-up-wrap">
+            <div class="counter-up">
+              <div class="counter-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
+                <h2 class="heading text-50" data-target="200">200<span>+</span>
+                </h2>
+                <div class="text text-18 fw-500">Project completed</div>
+              </div>
+              <div class="counter-item">
+                <h2 class="heading text-50" data-target="98">98<span>%</span>
+                </h2>
+                <div class="text text-18 fw-500">Happy Client's</div>
+              </div>
+              <div class="counter-item aos-init aos-animate" data-aos="fade-down" data-aos-delay="50">
+                <h2 class="heading text-50" data-target="10">10<span>+</span>
+                </h2>
+                <div class="text text-18 fw-500">Years experiences</div>
+              </div>
+            </div>
+          </counter-up>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================= -->
+    <!-- Testimonial -->
+    <div class="testimonial section-padding">
+      <div class="container">
+        <div class="grid grid-cols-12 lg:grid-gap-1">
+          <div class="lg:col-span-5 col-span-12">
+            <div class="section-headings section-headings-sticky">
+              <div class="subheading text-50 " data-aos="fade-up">
+                <span class="span">TESTIMONIALS</span>
+              </div>
+              <h2 class="heading text-30" data-aos="fade-up">
+                See what our clients say about us
+              </h2>
+              <div class="text text-white pe text-18 aos-init aos-animate" data-aos="fade-right" data-aos-delay="200">
+                Clients choose us for outcomes they can measure—not buzzwords.
+                Our team responds fast, keeps projects moving, and owns the details.
+                Communication is clear and honest, so you always know where things stand.
+              </div>
+              <div class="text text-white pt pe text-18 aos-init aos-animate" data-aos="fade-right"
+                data-aos-delay="200">
+                We work with urgency, protect timelines, and take ownership from start to finish.
+                Every update is straightforward, grounded, and free of corporate noise.
+                That discipline is exactly why our partnerships last.
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-7 col-span-12">
+            <div class="testimonial-card-inner">
+              <div class="card-testimonial radius18" data-aos="fade-up" data-aos-delay="10">
+                <ul class="rating-list list-unstyled">
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                </ul>
+                <p class="text text-24">
+                  “ Before working with them, our workflow was a mess. They didn’t just give advice — they fixed the
+                  root problems. Our efficiency jumped by 40% in three months. ”
+                </p>
+                <div class="user-info-wrap">
+                  <div class="user-info">
+                    <div class="user-img">
+                      <img src="assets/img/testimonial/test-1.jpg" width="80" height="80" loading="lazy" alt="image">
+                    </div>
+                    <div class="user-name-desig">
+                      <h2 class="user-name heading text-24">Rajesh M</h2>
+                      <div class="user-desig text text-18">
+                        Operations Head
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon-quote">
+                    <svg class="icon icon-62" width="62" height="62" viewBox="0 0 62 62" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.5312 9.41406C6.51702 9.41406 0 15.9329 0 23.9453C0 31.2606 5.43154 37.3306 12.4771 38.3311C11.9131 42.4287 10.3486 46.3275 7.90415 49.7085C7.42874 50.3683 7.44654 51.2624 7.9538 51.9009C8.4515 52.5292 9.31635 52.7674 10.0754 52.4473C21.6088 47.6332 29.0625 36.4438 29.0625 23.9453C29.0625 15.9329 22.5455 9.41406 14.5312 9.41406ZM47.4688 9.41406C39.4545 9.41406 32.9375 15.9329 32.9375 23.9453C32.9375 31.2606 38.369 37.3306 45.4146 38.3311C44.8506 42.4287 43.2861 46.3275 40.8417 49.7085C40.3662 50.3683 40.384 51.2624 40.8913 51.9009C41.389 52.5292 42.2538 52.7674 43.0129 52.4473C54.5463 47.6332 62 36.4438 62 23.9453C62 15.9329 55.483 9.41406 47.4688 9.41406Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card-testimonial radius18" data-aos="fade-up" data-aos-delay="150">
+                <ul class="rating-list list-unstyled">
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                </ul>
+                <p class="text text-24">
+                  “ They understood my business better than previous consultants. The strategy they built helped us cut
+                  unnecessary costs and scale faster. Worth every rupee. ”
+                </p>
+                <div class="user-info-wrap">
+                  <div class="user-info">
+                    <div class="user-img">
+                      <img src="assets/img/testimonial/test-2.jpg" width="80" height="80" loading="lazy" alt="image">
+                    </div>
+                    <div class="user-name-desig">
+                      <h2 class="user-name heading text-24">
+                        Sneha K
+                      </h2>
+                      <div class="user-desig text text-18">
+                        Founder – Retail Startup
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon-quote">
+                    <svg class="icon icon-62" width="62" height="62" viewBox="0 0 62 62" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.5312 9.41406C6.51702 9.41406 0 15.9329 0 23.9453C0 31.2606 5.43154 37.3306 12.4771 38.3311C11.9131 42.4287 10.3486 46.3275 7.90415 49.7085C7.42874 50.3683 7.44654 51.2624 7.9538 51.9009C8.4515 52.5292 9.31635 52.7674 10.0754 52.4473C21.6088 47.6332 29.0625 36.4438 29.0625 23.9453C29.0625 15.9329 22.5455 9.41406 14.5312 9.41406ZM47.4688 9.41406C39.4545 9.41406 32.9375 15.9329 32.9375 23.9453C32.9375 31.2606 38.369 37.3306 45.4146 38.3311C44.8506 42.4287 43.2861 46.3275 40.8417 49.7085C40.3662 50.3683 40.384 51.2624 40.8913 51.9009C41.389 52.5292 42.2538 52.7674 43.0129 52.4473C54.5463 47.6332 62 36.4438 62 23.9453C62 15.9329 55.483 9.41406 47.4688 9.41406Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="card-testimonial radius18" data-aos="fade-up" data-aos-delay="300">
+                <ul class="rating-list list-unstyled">
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                  <li class="rating-icon">
+                    <svg class="icon icon-24" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9998 17L6.12197 20.5902L7.72007 13.8906L2.48926 9.40983L9.35479 8.85942L11.9998 2.5L14.6449 8.85942L21.5104 9.40983L16.2796 13.8906L17.8777 20.5902L11.9998 17Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </li>
+                </ul>
+                <p class="text text-24">
+                  “ I liked their straightforward approach. No big promises, just clear action — and the results showed.
+                  Revenue improved, team performance improved, everything became smoother. ”
+                </p>
+                <div class="user-info-wrap">
+                  <div class="user-info">
+                    <div class="user-img">
+                      <img src="assets/img/testimonial/test-3.jpg" width="80" height="80" loading="lazy" alt="image">
+                    </div>
+                    <div class="user-name-desig">
+                      <h2 class="user-name heading text-24">Arvind P</h2>
+                      <div class="user-desig text text-18">Managing Director</div>
+                    </div>
+                  </div>
+                  <div class="icon-quote">
+                    <svg class="icon icon-62" width="62" height="62" viewBox="0 0 62 62" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M14.5312 9.41406C6.51702 9.41406 0 15.9329 0 23.9453C0 31.2606 5.43154 37.3306 12.4771 38.3311C11.9131 42.4287 10.3486 46.3275 7.90415 49.7085C7.42874 50.3683 7.44654 51.2624 7.9538 51.9009C8.4515 52.5292 9.31635 52.7674 10.0754 52.4473C21.6088 47.6332 29.0625 36.4438 29.0625 23.9453C29.0625 15.9329 22.5455 9.41406 14.5312 9.41406ZM47.4688 9.41406C39.4545 9.41406 32.9375 15.9329 32.9375 23.9453C32.9375 31.2606 38.369 37.3306 45.4146 38.3311C44.8506 42.4287 43.2861 46.3275 40.8417 49.7085C40.3662 50.3683 40.384 51.2624 40.8913 51.9009C41.389 52.5292 42.2538 52.7674 43.0129 52.4473C54.5463 47.6332 62 36.4438 62 23.9453C62 15.9329 55.483 9.41406 47.4688 9.41406Z"
+                        fill="CurrentColor" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact section -->
+    <div class="section-contact-form without-box-shadow section-padding">
+      <div class="container">
+        <div class="contact-box radius18">
+          <div class="grid max-xxl:grid-cols-2 xxl:flex product-grid justify-between xxl:gap-[30px]">
+            <div class="max-lg:col-span-2 max-xxl:col-span-1 col-contact-content">
+              <div class="section-headings">
+                <div class="subheading text-50 aos-init aos-animate" data-aos="fade-up">
+                  <span>CONTACT US</span>
+                </div>
+                <h2 class="heading text-30 aos-init aos-animate" data-aos="fade-up">
+                  Let's build an awesome project togethar
+                </h2>
+                <p class="text text-18 aos-init aos-animate" data-aos="fade-up">
+                  Share your vision, and we’ll transform it into a sharp, results-driven strategy that elevates your
+                  business with clarity and precision.
+                </p>
+
+                <div class="card-icon-text card-icon-text-horizontal">
+                  <div class="svg-wrapper aos-init aos-animate" data-aos="fade-up">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="content">
+                    <h2 class="heading text-24 fw-500 aos-init aos-animate" data-aos="fade-up">
+                      Our Address
+                    </h2>
+                    <p class="text text-16 aos-init aos-animate" data-aos="fade-up">
+                      NK Towers,
+                      near Capital Park Road, Madhapur, Hyderabad, Telangana 500081
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card-icon-text card-icon-text-horizontal">
+                  <div class="svg-wrapper aos-init aos-animate" data-aos="fade-up">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div class="content">
+                    <h2 class="heading text-24 fw-500 aos-init aos-animate" data-aos="fade-up">
+                      Call Us
+                    </h2>
+                    <a class="text text-16 aos-init aos-animate" data-aos="fade-up" href="tel:+91 6306302727"
+                      class="text text-20" aria-label="Call us">
+                      +91 6306302727
+                    </a>
+                  </div>
+                </div>
+
+                <div class="card-icon-text card-icon-text-horizontal">
+                  <div class="svg-wrapper aos-init aos-animate" data-aos="fade-up">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="content">
+                    <h2 class="heading text-24 fw-500 aos-init aos-animate" data-aos="fade-up">
+                      Email Us
+                    </h2>
+                    <a class="text text-16 aos-init aos-animate" data-aos="fade-up" href="mailto:advizee@gmail.com"
+                      class="text text-20" aria-label="Email us">
+                      advizee@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="max-lg:col-span-2 max-xxl:col-span-1 col-contact-form">
+              <div class="contact-form-wrap radius18">
+                <div class="contact-form-headings">
+                  <h2 class="heading text-32 aos-init aos-animate" data-aos="fade-up">
+                    Make an Appointment
+                  </h2>
+                  <p class="text text-16 aos-init aos-animate" data-aos="fade-up">
+                    Feel free to contact with us, we don't spam your email
+                  </p>
+                </div>
+                <form action="#" class="form contact-form aos-init aos-animate" data-aos="fade-up">
+                  <div class="field">
+                    <label for="ContactForm-name" class="visually-hidden">
+                      Your Name
+                    </label>
+                    <input id="ContactForm-name" class="text text-16" type="text" placeholder="Your Name *"
+                      name="Full name" required="">
+                  </div>
+                  <div class="field">
+                    <label for="ContactForm-email" class="visually-hidden">
+                      Email Here
+                    </label>
+                    <input id="ContactForm-email" class="text text-16" type="text" placeholder="Email Here *"
+                      name="email" required="">
+                  </div>
+                  <div class="field">
+                    <label for="ContactForm-body" class="visually-hidden">
+                      Your Comment
+                    </label>
+                    <textarea id="ContactForm-body" class="text text-16" rows="4" placeholder="Your Comment *"
+                      name="message" required=""></textarea>
+                  </div>
+                  <div class="form-button">
+                    <button type="submit" class="button  button--secondary" aria-label="Send Message">
+                      Send Message
+                      <span class="svg-wrapper">
+                        <svg class="icon-20" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M13.3365 7.84518L6.16435 15.0173L4.98584 13.8388L12.158 6.66667H5.83652V5H15.0032V14.1667H13.3365V7.84518Z"
+                            fill="currentColor"></path>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-main bg-cover "> <!--style="background-image: url(assets/img/footer/footer-bg-large.jpg)"-->
+      <div class="footer-top">
+        <div class="container">
+          <div class="grid max-lg:grid-cols-12 md:max-lg:gap-x-3 footer-custom-row">
+            <div class="max-md:col-span-12 max-lg:col-span-6">
+              <div class="footer-widget footer-widget-brand" data-aos="fade-up" data-aos-anchor=".footer-top">
+                <a class="footer-logo" href="index.html">
+                  <img class="foot-img" src="assets/img/footer-logo-2.png" alt="Consulo Logo" loading="lazy">
+                </a>
+                <p class="text text-16">
+                  We provide clear strategies, practical solutions, and measurable business results.
+                  Trusted by companies who want real growth and real outcomes.
+                </p>
+                <ul class="social-icons list-unstyled" data-aos="fade-up" data-aos-anchor=".footer-top">
+                  <li>
+                    <a class="social-link text" href="#">
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <span class="visually-hidden">Facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social-link text" href="#">
+                      <i class="fa-brands fa-linkedin-in"></i>
+                      <span class="visually-hidden">Linkedin</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social-link text" href="#">
+                      <i class="fa-brands fa-x-twitter"></i>
+                      <span class="visually-hidden">Twitter</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="social-link text" href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                      <span class="visually-hidden">Instagram</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="max-md:col-span-12 max-lg:col-span-6">
+              <div class="footer-widget footer-widget-menu" data-aos="fade-up" data-aos-anchor=".footer-top">
+                <div class="widget-heading heading text-22">Quick Link</div>
+                <ul class="footer-menu list-unstyled">
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label="About Us">
+                      <i class="fas fa-angle-double-right"></i>
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label="services">
+                      <i class="fas fa-angle-double-right"></i>
+                      services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label="Industries">
+                      <i class="fas fa-angle-double-right"></i>
+                      Industries
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label="contact us">
+                      <i class="fas fa-angle-double-right"></i>
+
+                      Contact Us
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="max-md:col-span-12 max-lg:col-span-6">
+              <div class="footer-widget footer-widget-menu" data-aos="fade-up" data-aos-anchor=".footer-top">
+                <div class="widget-heading heading text-22">Services</div>
+                <ul class="footer-menu list-unstyled">
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label=""><i class="fas fa-angle-double-right"></i>
+
+                      Business Strategy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label=""><i class="fas fa-angle-double-right"></i>
+
+                      Operations Optimization
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label=""><i class="fas fa-angle-double-right"></i>
+
+                      Process Improvement
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label=""><i class="fas fa-angle-double-right"></i>
+
+                      Financial Planning</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label=""><i class="fas fa-angle-double-right"></i>
+                      Business Growth Consulting
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text text-16 link" aria-label=""><i class="fas fa-angle-double-right"></i>
+                      Organizational Development
+                    </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="max-md:col-span-12 max-lg:col-span-6">
+              <div class="footer-widget footer-widget-menu" data-aos="fade-up" data-aos-anchor=".footer-top">
+                <div class="widget-heading heading text-22">Contact us</div>
+                <ul class="footer-menu list-unstyled" style="flex:1; min-width:250px;">
+
+                  <li class="flex">
+                    <div><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                      <h5 class="text-20 fw-500">Email</h5>
+                      <a href="#" class="text text-16 link me-2">advizee@gmail.com</a>
+                    </div>
+                  </li>
+
+                  <li class="flex">
+                    <div><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                      <h5 class="text-20 fw-500">Phone</h5>
+                      <a href="#" class="text text-16 link"> +91 6306302727</a>
+                    </div>
+                  </li>
+
+                  <li class="flex">
+                    <div> <i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                      <h5 class="text-20 fw-500">Address</h5>
+                      <a href="#" class="text text-16 link"> NK Towers, near
+                        Capital Park Road, <br>Madhapur, Hyderabad, Telangana 500081</a>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="footer-copyright text text-16">
+            Copyright ©<span class="current-year"></span> Advizee
+            All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal and Drawer Overlay -->
+  <drawer-opener id="drawer-overlay"></drawer-opener>
+
+  <!-- Scroll to Top Button -->
+  <scroll-top>
+    <div class="scroll-to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+      </svg>
+    </div>
+  </scroll-top>
+
+  <!-- all js -->
+  <script src="assets/js/vendor.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
